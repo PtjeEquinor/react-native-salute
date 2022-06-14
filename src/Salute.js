@@ -94,10 +94,11 @@ export default class Salute extends Component {
     }
 
     Animated.timing(
-      this.state.animatedValue,
-      { toValue: 0, duration: 350 },
-      {useNativeDriver: true,}
-    ).start();
+      this.state.animatedValue,{
+        toValue: 0,
+        duration: 350,
+        useNativeDriver: true,
+      }).start();
   }
 
   show = () => {
@@ -107,10 +108,11 @@ export default class Salute extends Component {
     }
 
     Animated.timing(
-      this.state.animatedValue,
-      { toValue: 1, duration: 350 },
-      {useNativeDriver: true,}
-    ).start();
+      this.state.animatedValue,{
+        toValue: 1,
+        duration: 350,
+        useNativeDriver: true,
+      }).start();
   }
 
   renderContent() {
