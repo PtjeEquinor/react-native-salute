@@ -96,6 +96,7 @@ export default class Salute extends Component {
     Animated.timing(
       this.state.animatedValue,
       { toValue: 0, duration: 350 },
+      {useNativeDriver: true,}
     ).start();
   }
 
@@ -108,6 +109,7 @@ export default class Salute extends Component {
     Animated.timing(
       this.state.animatedValue,
       { toValue: 1, duration: 350 },
+      {useNativeDriver: true,}
     ).start();
   }
 
