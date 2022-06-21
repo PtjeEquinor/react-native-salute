@@ -48,7 +48,7 @@ export default class Salute extends Component {
     animatedValue: new Animated.Value(0),
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.state.animatedValue.addListener(this.onAnimationEnd);
   }
   componentDidMount() {
